@@ -87,6 +87,7 @@ module Fog
       request :set_vm_customvalue
       request :list_host_systems
       request :list_snapshots
+      request :list_nics
       request :vm_snapshot_create
       request :vm_snapshot_revert
       request :vm_snapshot_destroy
