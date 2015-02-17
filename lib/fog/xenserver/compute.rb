@@ -113,6 +113,8 @@ module Fog
       request :destroy_vlan
       request :snapshot_server
       request :snapshot_revert
+      request :unplug
+      request :plug
 
       class Real
 
