@@ -2,13 +2,13 @@ module Fog
   module Compute
     class XenServer
       class Real
-        def destroy_vif( ref, extra_args = {})
+        def plug_vif( ref, extra_args = {})
           @connection.request({:parser => Fog::Parsers::XenServer::Base.new, :method => 'VIF.plug'}, ref)
         end
       end
 
       class Mock
-        def destroy_vif()
+        def plug_vif()
           Fog::Mock.not_implemented
         end
       end
