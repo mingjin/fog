@@ -113,8 +113,8 @@ module Fog
       request :destroy_vlan
       request :snapshot_server
       request :snapshot_revert
-      request :unplug
-      request :plug
+      request :unplug_vif
+      request :plug_vif
 
       class Real
 
@@ -180,5 +180,3 @@ module Fog
     end
   end
 end
-
-
