@@ -93,6 +93,7 @@ module Fog
       request :vm_snapshot_revert
       request :vm_snapshot_destroy
       request :vm_relocate
+      request :create_nic
 
       module Shared
 
