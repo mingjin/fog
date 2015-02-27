@@ -10,7 +10,6 @@ module Fog
           nic = vm_ref.config.hardware.device.find{|d| d.key == options['nic_key'] && d.is_a?(RbVmomi::VIM::VirtualEthernetCard)}
           device_config_spec = RbVmomi::VIM::VirtualDeviceConfigSpec(
             :operation => :remove,
-            :fileOperation => :destroy,
             :device => nic
           )
           hardware_spec={:deviceChange => [device_config_spec]}
