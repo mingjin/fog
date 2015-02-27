@@ -48,6 +48,7 @@ module Fog
       request :vm_reboot
       request :vm_clone
       request :vm_destroy
+      request :vm_destroy_nic
       request :vm_migrate
       request :list_datacenters
       request :get_datacenter
