@@ -32,7 +32,7 @@ module Fog
           if device_number.to_i >= 0
             conf['device'] = device_number
           else
-            highest_dev = 0
+            highest_dev = -1
             server = servers.get vm_ref
             server.vifs.each do |vif|
               dev = vif.device.to_i
