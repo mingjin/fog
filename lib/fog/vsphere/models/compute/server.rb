@@ -67,6 +67,11 @@ module Fog
         # End Lazy Loaded Attributes
 
 
+        def vm_reconfig_rename(options = {})
+          requires :instance_uuid, :name
+          service.vm_reconfig_rename('instance_uuid' => instance_uuid, 'name' => name)
+        end
+
         def vm_reconfig_memory(options = {})
           requires :instance_uuid, :memory
           service.vm_reconfig_memory('instance_uuid' => instance_uuid, 'memory' => memory_mb)
